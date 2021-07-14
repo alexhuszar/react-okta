@@ -22,10 +22,6 @@ function Login(props) {
 
     const { oktaAuth } = useOktaAuth();
 
-    // React.useEffect(() => {
-    //     oktaAuth.signInWithRedirect();
-    // }, [oktaAuth]);
-
     const handleSubmit = event => {
         event.preventDefault()
         console.log(event.target)

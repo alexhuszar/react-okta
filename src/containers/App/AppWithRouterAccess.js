@@ -14,6 +14,7 @@ const oktaAuth = new OktaAuth({
     issuer: config.okta.oidc.issuer,
     clientId: config.okta.oidc.clientId,
     redirectUri: `${window.location.origin}/login/callback`,
+    postLogoutRedirectUri: `${window.location.origin}/login`,
     pkce: true,
 });
 
